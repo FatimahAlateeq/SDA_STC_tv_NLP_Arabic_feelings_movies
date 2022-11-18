@@ -1,0 +1,1 @@
+clean_stc_data_set.csv filter=lfs diff=lfs merge=lfs -text
