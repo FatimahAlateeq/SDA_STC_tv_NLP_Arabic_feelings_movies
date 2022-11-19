@@ -171,7 +171,6 @@ PyArabic==0.6.15
 pyasn1==0.4.8
 pyasn1-modules==0.2.8
 pycodestyle==2.8.0
-pycosat==0.6.4
 pycparser==2.21
 pydocstyle==6.1.1
 pyflakes==2.4.0
