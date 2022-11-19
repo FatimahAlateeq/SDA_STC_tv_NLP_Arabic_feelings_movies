@@ -29,8 +29,8 @@ logger = logging.getLogger(__name__)
 app = Flask(__name__)
 
 # Loading our model and encoder 
-load_model = AutoModelForSequenceClassification.from_pretrained("C:/Users/HAFSAH\Desktop/SDA_BigData&IA_CodingDojo/capstone/final_model - Copy1/git hub uploads/SDA_STC_tv_NLP_Arabic_feelings_movies/final_model/model_final")
-load_tokenizer = AutoTokenizer.from_pretrained("C:/Users/HAFSAH\Desktop/SDA_BigData&IA_CodingDojo/capstone/final_model - Copy1/git hub uploads/SDA_STC_tv_NLP_Arabic_feelings_movies/final_model/model_final")
+load_model = AutoModelForSequenceClassification.from_pretrained("C:/Users/HAFSAH\Desktop/SDA_BigData&IA_CodingDojo/capstone/final_model - Copy1/git hub uploads/SDA_STC_tv_NLP_Arabic_feelings_movies/model_final")
+load_tokenizer = AutoTokenizer.from_pretrained("C:/Users/HAFSAH\Desktop/SDA_BigData&IA_CodingDojo/capstone/final_model - Copy1/git hub uploads/SDA_STC_tv_NLP_Arabic_feelings_movies/model_final")
 my_pipeline  = pipeline("sentiment-analysis", model=load_model, tokenizer=load_tokenizer)# outputs a list of dicts 
 
 # This will take you to the home HTML page --> in this example it is called home.html
@@ -82,7 +82,7 @@ def Recommendation():
            x = value
            
 
-    dff=pd.read_csv('C:/Users/HAFSAH/Desktop/SDA_BigData&IA_CodingDojo/capstone/final_model - Copy1/git hub uploads/SDA_STC_tv_NLP_Arabic_feelings_movies/final_model/clean_stc_data_set.csv')
+    dff=pd.read_csv('C:/Users/HAFSAH/Desktop/SDA_BigData&IA_CodingDojo/capstone/final_model - Copy1/git hub uploads/SDA_STC_tv_NLP_Arabic_feelings_movies/clean_stc_data_set.csv')
     
            
     def recommend(x): 
