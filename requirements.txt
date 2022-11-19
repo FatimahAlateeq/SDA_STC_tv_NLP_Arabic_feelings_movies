@@ -121,7 +121,6 @@ MarkupSafe==2.1.1
 matplotlib==3.6.0
 matplotlib-inline==0.1.6
 mccabe==0.7.0
-menuinst==1.4.19
 mistune==0.8.4
 more-itertools==9.0.0
 mpld3==0.3
